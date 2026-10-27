@@ -1,0 +1,11 @@
+###############################################################
+unzip langgraph-devops-agent.zip
+cd langgraph-devops
+
+cp .env.example .env
+nano .env
+
+docker compose up --build -d
+docker compose ps
+
+#######################################################
