@@ -1,0 +1,21 @@
+##################################
+
+
+
+cd langgraph-multi-agent-devops
+
+cp .env.example .env
+nano .env
+
+GROQ_API_KEY=your_actual_groq_api_key
+GROQ_MODEL=openai/gpt-oss-120b
+APPROVAL_SECRET=your_long_random_secret
+
+docker-compose up --build -d
+
+docker-compose ps
+
+##################################
+
+
+
